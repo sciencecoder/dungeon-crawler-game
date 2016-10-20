@@ -1,0 +1,63 @@
+$cell-size: 11px !important;
+.cell {
+  width: $cell-size;
+  height: $cell-size;
+  display: inline-block;
+  margin: 0px;
+}
+.wall {
+  @extend .cell;
+  background-color: grey;
+}
+.road {
+  @extend .cell;
+  background-color: white;
+}
+#player {
+  @extend .cell;
+  background-color: blue;
+}
+#boss {
+  @extend .cell;
+  background-color: black;
+}
+.enemy {
+  @extend .cell;
+  background-color: red;
+}
+.health {
+  @extend .cell;
+  background-color: green;
+}
+.weapon {
+  @extend .cell;
+  background-color: yellow;
+}
+.portal {
+  @extend .cell;
+  background-color: purple;
+}
+.hidden {
+  @extend .cell;
+  background-color: black;
+}
+#stats {
+  position: fixed;
+  background-color: black;
+  color: white;
+  height: 100px;
+}
+h2 {
+  
+  margin-bottom: 50px;
+}
+#game-board {
+  overflow: hidden;
+}
+#board {
+  background-color: grey;
+  font-size: 0;
+  padding-top: 100px;
+  margin-left: 10px;
+  width: 1650px;
+ }
